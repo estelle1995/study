@@ -153,7 +153,7 @@ class MemberCleaning implements AutoCloseable {
 	
 	public MemberCleaning() {
 		this.member = new Member();
-		this.cleaner.register(this, this.member);
+		this.cleanable = this.cleaner.register(this, this.member);
 	}
 	@Override
 	public void close() throws Exception {
@@ -212,3 +212,5 @@ public class JavaAPIDemo {
 }
 
 ```
+
+
