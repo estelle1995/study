@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "vector": "cpp",
+        "deque": "cpp",
+        "utility": "cpp"
+    },
+    "picgo.picBed.current": "github",
+    "picgo.picBed.github.path": "imgs_for_md/",
+    "picgo.picBed.github.repo": "estelle1995/study",
+    "picgo.picBed.github.token": "aede5bd713660a85512106a57c8f32914ed1e381",
+    "picgo.picBed.github.customUrl": "https://github.com/estelle1995/study",
+    "picgo.picBed.github.branch": "master"
+}
