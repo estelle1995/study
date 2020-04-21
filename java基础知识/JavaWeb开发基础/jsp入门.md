@@ -6,7 +6,11 @@ html
 1. 优点：不用为输出 html 标签而发愁
 2. 缺点：html是静态页面，不能包含动态信息
 
+<<<<<<< HEAD
 jsp（JavaServer Pages）
+=======
+jsp
+>>>>>>> 48699bc49fdba9f4a4a34d03262f6971f2a1ef52
 1. 优点：在原有 html 的基础上添加 java 脚本，构成 jsp 页面。
 
 ### jsp 和 Servlet 分工
@@ -73,7 +77,10 @@ Cookie 详解
    2. Cookie 的 path 由服务器创建 Cookie 时设置
    3. 当浏览器访问服务器某个路径时，需要归还哪些 Cookie 给服务器，这由 Cookie 的 path 决定
    4. 浏览器访问服务器的路径，如果包含某个 Cookie 的路径，那么就会归还这个 Cookie
+<<<<<<< HEAD
    5. Cookie的path默认值：当前访问路径的父路径，例如在访问/day11_1/jsp/a.jsp则Cookie的默认path为/day11_1/jsp
+=======
+>>>>>>> 48699bc49fdba9f4a4a34d03262f6971f2a1ef52
 4. Cookie 的 domain （了解）
    1. domain 用来指定 Cookie 的域名！当多个二级域中共享 Cookie 时才有用
    2. 例如： www.baidu.con、 zhidao.baidu.com、news.baidu.com、tieba.baidu.com 之间共享 Cookie 时可以使用 domain
