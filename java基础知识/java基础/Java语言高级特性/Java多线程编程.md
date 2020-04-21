@@ -140,6 +140,31 @@ public interface RunnableFuture<V> extends Runnable, Future<V> {
 	void run();
 }
 ```
+![](assets/Callable实现类关系.png)
+```java
+package cn.mldn.thread;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.FutureTask;
+
+class MyCallable implements Callable<String> {
+	@Override
+	public String call() throws Exception {
+		for (int x = 0; x < 10; x++) {
+			System.out.println("****** 线程执行、x = " + x);
+		}
+		return "线程执行完毕。";
+	}
+}
+
+public class CallableDemo {
+	public static void main(String[] args) throws Exception {
+		FutureTask<String> task = new FutureTask<>(new MyCallable());
+		new Thread(task).start();
+		System.out.println("[线程返回数据]" + task.get());
+	}
+}
+```
 
 # 线程运行状态
 对于线程的开发而言，编写程序的过程之中总是按照：定义线程主体类，而后通过 Thread 类进行线程的启动，但是并不意味着你调用了start() 方法，线程就已经开始运行了，因为整体的线程处理有自己的一套运行状态。
